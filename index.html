@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>To-do List</title>
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <script src="./script/tab.js"></script>
+
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <h1>My To Do List</h1>
+            </div>
+        </header>
+
+        <section>
+            <div class="container">
+                <input type="text" id="myInput" placeholder="Add new task..">
+                <button id="btn_add" onclick="newElement()">Add</button>
+                <button id="btn_clear">Clear All</button>
+            </div>
+        </section>
+        <section class="showcase">
+            <div>
+                <div class="tab">
+                    <button class="tablinks" onclick="todoList(event, 'all')">All</button>
+                    <button class="tablinks active" background-color: "#ccc" onclick="todoList(event, 'todo')">To-do</button>
+                    <button class="tablinks" onclick="todoList(event, 'completed')">Completed</button>
+                </div>
+
+                <div id="all" class="tabcontent">
+                    <h3>All task</h3>
+                        <p>All of my task.</p>
+                </div>
+
+                <div id="todo" class="tabcontent">
+                    <ul id="myUL">
+                        <li>Make Coffee</li>
+                        <li class="checked">Play FIFA</li>
+                        <li>Read a book</li>
+                        <li>Go to market</li>
+                        <li>Sleep</li>
+                    </ul>
+                    <script src="./script/action.js"></script>
+                </div>
+
+                <div id="completed" class="tabcontent">
+                    <h3>Completed</h3>
+                    <p>All of my completed task.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Biprodas Roy &copy 2017. All rights reserved.</p>
+        </footer>
+    </body>
+</html>

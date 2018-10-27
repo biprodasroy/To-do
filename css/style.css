@@ -1,0 +1,193 @@
+body{
+  font: 15px/1.5 Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#f4f4f4;
+  text-align: center;
+}
+* { box-sizing: border-box; }
+/* Global */
+.container{
+  width:60%;
+  margin:auto;
+  overflow:hidden;
+}
+
+input[type=text] {
+    width: 30%;
+    padding: 8px 12px;
+    float: left;
+    margin-left: 20%;
+}
+
+#btn_add{
+    width: 10%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+    margin-left: 5px;
+}
+#btn_add:hover {
+    background-color: #45a049;
+}
+#btn_clear{
+    width: 12%;
+    background-color: #C00000;
+    color: white;
+    padding: 10px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin-right: 15%;
+}
+#btn_clear:hover {
+    background-color: #C00000;
+}
+/* Header **/
+header{
+  background:#35424a;
+  color:#ffffff;
+  min-height:70px;
+  border-bottom:#e8491d 3px solid;
+  margin-bottom: 20px;
+}
+
+/*Main section*/
+.showcase{
+    width:50%;
+    margin:auto;
+    overflow:hidden;
+    margin-top: 20px;
+    min-height: 384px;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    width: 33.33%;
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color:   #46a049;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color:  #3e8e41;
+    color: white;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+#todo{
+ 	display: block;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+
+
+/* Remove margins and padding from the list */
+ul {
+    margin: 0%;
+    padding: 0;
+}
+
+/* Style the list items */
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 10px 8px 10px 50px;
+  list-style-type: none;
+  background: #eee;
+  font-size: 18px;
+  text-align: left;
+  transition: 0.2s;
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+  background:  #e6e6e6;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+  background: #ddd;
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+    margin-left: 5%;
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+/* Style the close button */
+.close {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  padding: 5px 25px 5px 25px;
+  color: #C00000;
+}
+
+.close:hover {
+  background-color: #C00000;
+  color: white;
+}
+
+/*Footer*/
+footer{
+  padding:5px;
+  margin-top: 20px;
+  font-size: 12px;
+  color:#ffffff;
+  background-color:#464646;
+  text-align: center;
+}
